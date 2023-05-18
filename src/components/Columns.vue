@@ -11,7 +11,7 @@
       <h2>Task</h2>
       <p>Write a JavaScript function to print the “Hello World” message</p>
     </div>
-    <div class="column">
+    <div class="column inputCol">
       <h2>Answer</h2>
       <form @submit.prevent="submitCode()">
         <textarea
@@ -62,7 +62,7 @@ export default {
 <style scoped>
 .section {
   width: 100%;
-  margin: 120px 0 0 60px;
+  margin: 170px 0 0 60px;
   display: flex;
   justify-content: space-evenly;
   overflow: hidden;
@@ -124,6 +124,9 @@ button {
   .column {
     width: 300px;
   }
+  .inputCol {
+    width: 640px;
+  }
 }
 @media only screen and (max-width: 710px) {
   .section {
@@ -132,7 +135,23 @@ button {
     margin: 80px 0 0 44px;
   }
 }
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 780px) {
+  .column {
+    width: 500px;
+  }
+}
+@media only screen and (max-width: 718px) {
+  .column {
+    width: 400px;
+  }
+}
+@media only screen and (max-width: 546px) {
+  .column {
+    width: 300px;
+  }
+}
+
+@media only screen and (max-width: 450px) {
   .column {
     width: 300px;
     height: 450px;
@@ -141,10 +160,22 @@ button {
     height: 335px;
   }
 }
-@media only screen and (max-width: 406px) {
+@media only screen and (max-width: 426px) {
   .column {
-    width: 260px;
+    width: 240px;
     height: 390px;
+  }
+  .inputCol {
+    height: 420px;
+  }
+  textarea {
+    height: 300px;
+  }
+}
+@media only screen and (max-width: 372px) {
+  .column {
+    width: 200px;
+    height: 410px;
   }
 }
 </style>
